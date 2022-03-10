@@ -88,7 +88,7 @@ _return.addEventListener("click", function (e) {
 
   var array = `[\n${picks
     .map((pick, i) => `  '${i}': ['${pick}'],\n`)
-    .join("")}]`;
+    .join('')}]`;
 
   data.style.display = "block";
   code.textContent = array;
@@ -100,7 +100,7 @@ function listPicker() {
       <ul class="list-picker-list is-options-list"></ul>
       ${Array.from({ length: lists })
         .map(() => '<ul class="list-picker-list is-picks-list"></ul>')
-        .join("")}
+        .join('')}
     </div>
   `;
 
