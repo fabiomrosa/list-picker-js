@@ -1,1 +1,282 @@
-body{padding:3rem;font-size:16px;background-color:#f8f0e1;overflow-x:hidden}.clearfix:after,.clearfix:before{content:" ";display:table}.clearfix:after{clear:both}.nowrap{white-space:nowrap}.box-shadow{-webkit-box-shadow:2px 3px 0 0 rgba(0,0,0,.15);box-shadow:2px 3px 0 0 rgba(0,0,0,.15)}.text-shadow{text-shadow:2px 3px 0 rgba(0,0,0,.15)}.app{margin:0 auto;max-width:1200px}.main{position:relative;background:#fff;border-radius:10px}.main .content{position:relative;padding:4rem}.main .content .subtitle{margin:0;color:#3f81cf;font-family:Roboto Mono,monospace;font-size:2rem;font-weight:700}.main .controls{margin:2rem 0}.main .controls .set{margin-top:2rem}.main .controls .set:first-child{margin-top:0}.main .controls .inputs{float:left;margin-right:2rem}.main .controls .inputs h3{margin:0;margin-bottom:.5rem;color:#e84052;font-family:Roboto Mono,monospace;font-size:.8rem;font-weight:500}.main .controls .data{display:none;padding:.75rem;background-color:#e7e7e7;border-radius:3px}.main .controls .data pre{margin:0}.main .controls .data code{color:#444;font-size:.8rem;line-height:1.5rem;text-shadow:1px 1px 0 rgba(0,0,0,.1);white-space:pre-wrap}.button-group .button{display:inline-block;outline:0;float:left;margin-left:-1px;padding:.5rem 1rem;color:#fff;font-family:Roboto Mono,monospace;font-size:1rem;font-weight:400;text-shadow:1px 1px 0 rgba(0,0,0,.15);background-color:#538ed4;border:1px solid #3f81cf}.button-group .button.solo{background:#eb5767;border:1px solid #e84052}.button-group .button.is-selected{background-color:#3f81cf}.button-group .button.solo.is-selected{background-color:#e84052}.button-group .button:first-child{margin-left:0;border-top-left-radius:3px;border-bottom-left-radius:3px}.button-group .button:last-child{border-top-right-radius:3px;border-bottom-right-radius:3px}.button-group .button:disabled{color:#f7f7f7;text-shadow:-1px -1px 0 rgba(0,0,0,.15);background-color:#d7d7d7;border:1px solid #c7c7c7}.button-group .button:hover{background-color:#3f81cf}.button-group .button.solo:hover{background:#e84052}.button-group .button:disabled:hover{background-color:#d7d7d7;border:1px solid #d1d1d1}.card{position:relative;padding:20px 0;background:#eb5767;border:1px solid #e84052}.card .card-close{position:absolute;top:50%;left:1.25rem;width:2rem;height:2rem;background-color:#f8f0e1;border-radius:100%;-webkit-transform:translateY(-50%);transform:translateY(-50%);-webkit-box-shadow:0 0 0 0 rgba(0,0,0,.15);box-shadow:0 0 0 0 rgba(0,0,0,.15);-webkit-transition:background-color .8s cubic-bezier(.19,1,.22,1),-webkit-box-shadow .8s cubic-bezier(.19,1,.22,1);transition:background-color .8s cubic-bezier(.19,1,.22,1),-webkit-box-shadow .8s cubic-bezier(.19,1,.22,1);transition:background-color .8s cubic-bezier(.19,1,.22,1),box-shadow .8s cubic-bezier(.19,1,.22,1);transition:background-color .8s cubic-bezier(.19,1,.22,1),box-shadow .8s cubic-bezier(.19,1,.22,1),-webkit-box-shadow .8s cubic-bezier(.19,1,.22,1)}.card:hover .card-close,.list-picker-list-item.is-selected .card-close{background-color:#f4ba4e;-webkit-box-shadow:2px 3px 0 0 rgba(0,0,0,.15);box-shadow:2px 3px 0 0 rgba(0,0,0,.15)}.card .card-close-icon{display:block;position:absolute;top:50%;left:50%;color:#eb5767;font-family:Roboto Mono,monospace;font-size:2rem;font-weight:500;text-align:center;-webkit-transform:translateX(-50%) translateY(-52.5%);transform:translateX(-50%) translateY(-52.5%);-webkit-transform-origin:0 0;transform-origin:0 0;-webkit-transition:color .5s cubic-bezier(.19,1,.22,1);transition:color .5s cubic-bezier(.19,1,.22,1)}.card:hover .card-close-icon,.list-picker-list-item.is-selected .card-close-icon{color:#fff;text-shadow:-1px -1px 0 rgba(0,0,0,.15)}.card .card-content-text{margin:0;margin-right:1.25rem;margin-left:4.5rem;color:#f4ba4e;font-family:Roboto Mono,monospace;font-size:1.25rem;font-weight:700;line-height:2rem;text-shadow:1px 1px 0 rgba(0,0,0,.15);-webkit-transition:color .8s cubic-bezier(.19,1,.22,1),text-shadow .8s cubic-bezier(.19,1,.22,1);transition:color .8s cubic-bezier(.19,1,.22,1),text-shadow .8s cubic-bezier(.19,1,.22,1)}.card:hover .card-content-text,.list-picker-list-item.is-selected .card-content-text{color:#fff;text-shadow:2px 3px 0 rgba(0,0,0,.15)}.list-picker-list.is-options-list .card-close-icon.card-close-plus{display:block}.list-picker-list.is-options-list .card-close-icon.card-close-times,.list-picker-list.is-picks-list .card-close-icon.card-close-plus{display:none}.list-picker-list.is-picks-list .card-close-icon.card-close-times{display:block}.list-picker{padding:0;border:0}.list-picker-list{margin-top:0;margin-bottom:0;border-style:dashed}.list-picker-list:first-child{margin-left:0}.list-picker-list:last-child{margin-right:0}.list-picker-list-item{padding:0;background-color:transparent}
+body {
+  padding: 3rem;
+  font-size: 16px;
+  background-color: #f8f0e1;
+  overflow-x: hidden;
+}
+
+.clearfix:after,
+.clearfix:before{
+  content: " ";
+  display: table
+}
+.clearfix:after{
+  clear:both
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.box-shadow {
+  box-shadow: 2px 3px 0px 0px rgba(0, 0, 0, .15);
+}
+
+.text-shadow {
+  text-shadow: 2px 3px 0px rgba(0, 0, 0, .15);
+}
+
+.app {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.main {
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.main .content {
+  position: relative;
+  padding: 4rem;
+}
+
+.main .content .subtitle {
+  margin: 0;
+  color: #3f81cf;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.main .controls {
+  margin: 2rem 0;
+}
+
+.main .controls .set {
+  margin-top: 2rem;
+}
+
+.main .controls .set:first-child {
+  margin-top: 0;
+}
+
+.main .controls .inputs {
+  float: left;
+  margin-right: 2rem;
+}
+
+.main .controls .inputs h3 {
+  margin: 0;
+  margin-bottom: .5rem;
+  color: #e84052;
+  font-family: 'Roboto Mono', monospace;
+  font-size: .8rem;
+  font-weight: 500;
+}
+
+.main .controls .data {
+  display: none;
+  padding: .75rem;
+  background-color: #e7e7e7;
+  border-radius: 3px;
+}
+
+.main .controls .data pre {
+  margin: 0;
+}
+
+.main .controls .data code {
+  color: #444;
+  font-size: .8rem;
+  line-height: 1.5rem;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, .1);
+  white-space: pre-wrap;
+}
+
+/* ================================================================= */
+/*                This is the style of button-group                  */
+/* ================================================================= */
+
+.button-group {}
+
+.button-group .button {
+  display: inline-block;
+  outline: 0;
+  float: left;
+  margin-left: -1px;
+  padding: .5rem 1rem;
+  color: #fff;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1rem;
+  font-weight: 400;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, .15);
+  background-color: #538ed4;
+  border: 1px solid #3f81cf;
+}
+
+.button-group .button.solo {
+  background: #eb5767;
+  border: 1px solid #e84052;
+}
+
+.button-group .button.is-selected {
+  background-color: #3f81cf;
+}
+
+.button-group .button.solo.is-selected {
+  background-color: #e84052;
+}
+
+.button-group .button:first-child {
+  margin-left: 0;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.button-group .button:last-child {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.button-group .button:disabled {
+  color: #f7f7f7;
+  text-shadow: -1px -1px 0px rgba(0, 0, 0, .15);
+  background-color: #d7d7d7;
+  border: 1px solid #c7c7c7;
+}
+
+.button-group .button:hover {
+  background-color: #3f81cf;
+}
+
+.button-group .button.solo:hover {
+  background: #e84052;
+}
+
+.button-group .button:disabled:hover {
+  background-color: #d7d7d7;
+  border: 1px solid #d1d1d1;
+}
+
+/* ================================================================= */
+/*               This is the style of the custom item                */
+/* ================================================================= */
+
+.card {
+  position: relative;
+  padding: 20px 0;
+  background: #eb5767;
+  border: 1px solid #e84052;
+}
+
+.card .card-close {
+  position: absolute;
+  top: 50%;
+  left: 1.25rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: #f8f0e1;
+  border-radius: 100%;
+  transform: translateY(-50%);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, .15);
+  transition: background-color .8s cubic-bezier(0.190, 1.000, 0.220, 1.000),
+              box-shadow .8s cubic-bezier(0.190, 1.000, 0.220, 1.000);
+}
+
+.list-picker-list-item.is-selected .card-close,
+.card:hover .card-close {
+  background-color: #f4ba4e;
+  box-shadow: 2px 3px 0px 0px rgba(0, 0, 0, .15);
+}
+
+.card .card-close-icon {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #eb5767;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  transform: translateX(-50%) translateY(-52.5%);
+  transform-origin: 0% 0%;
+  transition: color .5s cubic-bezier(0.190, 1.000, 0.220, 1.000);
+}
+
+.list-picker-list-item.is-selected .card-close-icon,
+.card:hover .card-close-icon {
+  color: #fff;
+  text-shadow: -1px -1px 0px rgba(0, 0, 0, .15);
+}
+
+.card .card-content-text {
+  margin: 0;
+  margin-right: 1.25rem;
+  margin-left: 4.5rem;
+  color: #f4ba4e;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 2rem;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, .15);
+  transition: color .8s cubic-bezier(0.190, 1.000, 0.220, 1.000),
+              text-shadow .8s cubic-bezier(0.190, 1.000, 0.220, 1.000);
+}
+
+.list-picker-list-item.is-selected .card-content-text,
+.card:hover .card-content-text {
+  color: #fff;
+  text-shadow: 2px 3px 0px rgba(0, 0, 0, .15);
+}
+
+/* ================================================================= */
+/*             This adds some flavor to the custom item              */
+/* ================================================================= */
+
+.list-picker-list.is-options-list .card-close-icon.card-close-plus {
+  display: block;
+}
+
+.list-picker-list.is-picks-list .card-close-icon.card-close-plus {
+  display: none;
+}
+
+.list-picker-list.is-options-list .card-close-icon.card-close-times {
+  display: none;
+}
+
+.list-picker-list.is-picks-list .card-close-icon.card-close-times {
+  display: block;
+}
+
+/* ================================================================= */
+/*      This overrides some of preset properties of list-picker      */
+/* ================================================================= */
+
+.list-picker {
+  padding: 0;
+  border: 0;
+}
+
+.list-picker-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  border-style: dashed;
+}
+
+.list-picker-list:first-child {
+  margin-left: 0;
+}
+
+.list-picker-list:last-child {
+  margin-right: 0;
+}
+
+.list-picker-list-item {
+  padding: 0;
+  background-color: transparent;
+}
+  
